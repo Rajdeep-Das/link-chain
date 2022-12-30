@@ -1,15 +1,23 @@
-<script lang="ts">
-	import links from '../links.json';
-	let linksData = links;
+<script>
+// @ts-nocheck
+
+	// import links from '../links.json';
+	// let linksData = links;
+	// export let links;
+	// const linksData = links;
+	
+	 export let data;
+	 let {linkData} = data;
+
 </script>
 
 <div class="main">
 	<h1 class="heading">Welcome to Link Chain</h1>
 	<div class="link_container">
-		{#each linksData as data}
+		{#each linkData as link}
 			<div class="linklist">
-				<a class="links" target="_blank" href={data.url} rel="noreferrer">
-					{data.name}
+				<a class="links" target="_blank" href={link.url} rel="noreferrer">
+					{link.name}
 				</a>
 			</div>
 		{/each}
