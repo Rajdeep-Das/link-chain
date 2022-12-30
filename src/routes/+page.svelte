@@ -1,14 +1,6 @@
 <script>
-// @ts-nocheck
-
-	// import links from '../links.json';
-	// let linksData = links;
-	// export let links;
-	// const linksData = links;
-	
-	 export let data;
-	 let {linkData} = data;
-
+	export let data;
+	let { linkData } = data;
 </script>
 
 <div class="main">
@@ -25,9 +17,9 @@
 </div>
 
 <style>
-    .heading{
-        color: rgb(34 34 34 / 88%)
-    }
+	.heading {
+		color: rgb(34 34 34 / 88%);
+	}
 	.link_container {
 		display: flex;
 		flex-direction: column;
